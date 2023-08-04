@@ -1,7 +1,6 @@
-import './Hero.css';
-import '../App.css';
+import './Heroes.css';
 
-function Hero(props) {
+function Heroes(props) {
 
     return (
       <>
@@ -19,4 +18,4 @@ function Hero(props) {
     );
   }
   
-  export default Hero;
+  export default Heroes;

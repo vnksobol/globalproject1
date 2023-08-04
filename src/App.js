@@ -1,6 +1,6 @@
 import { Chart } from "react-google-charts";
 import './App.css';
-import Hero from './components/Hero';
+import Heroes from './components/Heroes/Heroes';
 
 export const data = [
   ["Resources", "Percent"],
@@ -123,17 +123,30 @@ function App() {
 
   return (
     <>
-      <Chart
-      chartType="PieChart"
-      data={data}
-      options={options}
-      width={"100%"}
-      height={"400px"}
-      />
+    <div style={{ borderBottom: '2px solid dimgray' }}>
+        <Chart
+        chartType="PieChart"
+        data={data}
+        options={options}
+        width={"100%"}
+        height={"400px"}
+        />
+      </div>
+
       <div className="hero-card">
         {
           heroes.map((hero) =>
-            <Hero name={hero.name} universe={hero.universe} alterego={hero.alterego} occupation={hero.occupation} friends={hero.friends} superpowers={hero.superpowers} info={hero.info} url={hero.url}></Hero>
+            <Heroes 
+            name={hero.name} 
+            universe={hero.universe} 
+            alterego={hero.alterego} 
+            occupation={hero.occupation} 
+            friends={hero.friends} 
+            superpowers={hero.superpowers} 
+            info={hero.info} 
+            url={hero.url}
+            key={hero.name}
+            />
           )
         }
       </div>
