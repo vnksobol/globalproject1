@@ -1,6 +1,7 @@
 import { Chart } from "react-google-charts";
 import './App.css';
 import Heroes from './components/Heroes/Heroes';
+import Tariff from './components/Tariff/Tariff';
 
 export const data = [
   ["Resources", "Percent"],
@@ -149,6 +150,10 @@ function App() {
             />
           )
         }
+      </div>
+
+      <div className="tariff-table">
+        
       </div>
     </>
   );

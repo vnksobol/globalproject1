@@ -1,0 +1,26 @@
+.tariff-table {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    overflow:hidden;
+    padding:1rem;
+    width:98%;
+    height:auto;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.tariff-item {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    overflow:hidden;
+    padding:1rem;
+    margin:1rem;
+    width:15%;
+    height:auto;
+    border: 2px solid rgb(156, 2, 2);
+    border-radius:10px;
+    background:linear-gradient(#f0eeee, #c9c9c9);
+}
